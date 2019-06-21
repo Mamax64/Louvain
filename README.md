@@ -11,9 +11,9 @@ Classe1,Classe2,Poids
 Il faut aller dans la classe G du package com.github.neiljustice.louvain 
 Modifier dans la méthode run() le nom du fichier d’input par le nom du fichier ajouté précédemment ligne 19 et 23.
 
-Graph g = new GraphBuilder().fromFile(System.getProperty("user.dir") + "\\data\\input.txt", true);
-LouvainDetector ld = new LouvainDetector(g);
-LayeredCommunityStructure cs = new LayeredCommunityStructure(ld.run());
+- Graph g = new GraphBuilder().fromFile(System.getProperty("user.dir") + "\\data\\input.txt", true);
+- LouvainDetector ld = new LouvainDetector(g);
+- LayeredCommunityStructure cs = new LayeredCommunityStructure(ld.run());
 
 Ces trois lignes permettent de faire le Clustering, et nous donnera un fichier d’output ( output.csv dans le dossier data)
 Si les poids dans le fichier d’input ne sont pas adaptés (ici plus le poids est élevé moins les deux classes sont liées, si ce n’est pas le cas sur votre fichier d’input, suivre les instructions suivantes)
